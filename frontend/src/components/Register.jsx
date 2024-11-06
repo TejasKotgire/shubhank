@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 function Register() {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ function Register() {
 
   return (
     <>
-      {/* Navbar */}
+      {/* Navbar
       <nav className="bg-blue-600 text-white py-4 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <Link to="/" className="text-2xl font-semibold tracking-wide">MERN App</Link>
@@ -33,7 +34,9 @@ function Register() {
             <Link to="/login" className="hover:text-gray-200 transition duration-300">Login</Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
+
+      <Navbar/>
 
       {/* Register Form */}
       <div className="bg-gray-100 py-16 min-h-screen flex items-center justify-center">
